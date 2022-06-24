@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HomeWork2
 {
@@ -10,6 +6,12 @@ namespace HomeWork2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Input 3  float nubers: \t");
+            bool success1 = float.TryParse(Console.ReadLine(), out float firstNumber);
+            bool success2 = float.TryParse(Console.ReadLine(), out float secondNumber);
+            bool success3 = float.TryParse(Console.ReadLine(), out float thirdNumber);
+            Array[] arr;
+            arr[0] = 
         }
     }
 }
