@@ -9,21 +9,35 @@ namespace HomeWork2
             Console.WriteLine();
             //part 1
             Console.WriteLine("\tPart 1");
-            float[] arr1 = new float[3];
             Console.Write("Input first  float number: \t");
-            arr1[0] = float.Parse(Console.ReadLine());
-            Console.Write("Input second  float number: \t");
-            arr1[1] = float.Parse(Console.ReadLine());
-            Console.Write("Input third  float number: \t");
-            arr1[2] = float.Parse(Console.ReadLine());
-            foreach (float i in arr1)
+            float firstValue = float.Parse(Console.ReadLine());
+            if (firstValue > (-5) && firstValue < 5)
             {
-                if (i < (-5) | i > 5)
-                {
-                    Console.WriteLine($"Argument {i} out of range [-5.5]");
-                }
-                else
-                    Console.WriteLine($"Argument {i} within range [-5.5]");
+                Console.WriteLine($"Argument {firstValue} within range [-5.5]");
+            }
+            else
+            {
+                Console.WriteLine($"Argument {firstValue} out of range [-5.5]");
+            }
+            Console.Write("Input second  float number: \t");
+            float secondValue = float.Parse(Console.ReadLine());
+            if (secondValue > (-5) && secondValue < 5)
+            {
+                Console.WriteLine($"Argument {secondValue} within range [-5.5]");
+            }
+            else
+            {
+                Console.WriteLine($"Argument {secondValue} out of range [-5.5]");
+            }
+            Console.Write("Input third  float number: \t");
+            float thirdValue = float.Parse(Console.ReadLine());
+            if (thirdValue > (-5) && thirdValue < 5)
+            {
+                Console.WriteLine($"Argument {thirdValue} within range [-5.5]");
+            }
+            else
+            {
+                Console.WriteLine($"Argument {thirdValue} out of range [-5.5]");
             }
             Console.WriteLine("For next step type Enter");
             Console.ReadLine();
